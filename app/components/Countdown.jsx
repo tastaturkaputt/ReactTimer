@@ -1,16 +1,15 @@
 var React = require('react');
+var Clock = require('Clock');
 
 // Stateless functional component
-var Countdown = (props) => {
-  return (
-    <div>
+var Countdown = React.createClass({
+  render: function () {
+    return (
       <div>
-        <div>
-          <h3>Countdown.jsx Rendered</h3>
-        </div>
+        <Clock totalSeconds={129}/>
       </div>
-    </div>
-  );
-};
+    );
+  }
+});
 
 module.exports = Countdown;
