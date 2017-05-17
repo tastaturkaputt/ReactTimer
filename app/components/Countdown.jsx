@@ -1,19 +1,16 @@
 var React = require('react');
-var Nav = require('Nav');
 
 // Stateless functional component
-var Main = (props) => {
+var Countdown = (props) => {
   return (
     <div>
       <div>
         <div>
-          <Nav/>
-          <h3>Main.jsx Rendered</h3>
-          {props.children}
+          <h3>Countdown.jsx Rendered</h3>
         </div>
       </div>
     </div>
   );
 };
 
-module.exports = Main;
+module.exports = Countdown;
